@@ -126,3 +126,9 @@ const mongoDBName = process.env.MONGO_DB_NAME || '<mongo_db_name>';
 <p align="center">
 <img width="783" alt="img9" src="https://user-images.githubusercontent.com/40369712/77024952-d682e900-695d-11ea-8724-ffa8b08c8b58.png">
 </p>
+
+---
+
+## Autores ✒️
+
+_Equipo IBM Cloud Tech sales Colombia._
