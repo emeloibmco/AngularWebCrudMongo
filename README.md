@@ -45,8 +45,7 @@ Una vez detro del catalogo podra ver todas las opciones disponibles para el desp
 Para fines practicos, el cluster ya cuenta con un servicio de MongoDB al que podra conectarse si no desea crear uno nuevo, las credenciales de conexión, de este se pueden ver a continuación.
 
 <p align="center">
-<img width="502" alt="img3" src="https://user-images.githubusercontent.com/40369712/77017999-0e803100-694a-11ea-958a-fb7ddc8a9ce0.png">
-</p>
+<img width="608" alt="mongo" src="https://user-images.githubusercontent.com/60987042/77779686-e61ac580-7020-11ea-8c64-c911d360774a.PNG">
  
 ---
 
