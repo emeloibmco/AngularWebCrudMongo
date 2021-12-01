@@ -105,24 +105,9 @@ Antes de modificar el archivo de conexión de la aplicación, es necesario conoc
 
 ---
 
-**a.** Dirijase a Applications -> Deployments -> mongodb y vera una pantalla como la siguiente, seleccione el numero del ultimo despliegue realizado.
+**a.** Seleccione el pod de la base de datos.
 
-<p align="center">
-<img width="778" alt="img4" src="https://user-images.githubusercontent.com/40369712/77023613-5909a980-695a-11ea-8cbf-632c363c5353.png">
-</p>
- 
-**b.**	Dirijase al final de la pagina y seleccione el nombre del pod donde se ha desplegado el servicio.
-
-<p align="center">
-<img width="773" alt="img5" src="https://user-images.githubusercontent.com/40369712/77023743-b30a6f00-695a-11ea-89e0-612636db6b98.png">
-</p>
-
-**c.**	Identifique la Ip del pod, la cual debera ser asignada en la configuración de la conexión de la aplicación.
-
-<p align="center">
-<img width="775" alt="img6" src="https://user-images.githubusercontent.com/40369712/77023847-f238c000-695a-11ea-987b-e40c7bafe08c.png">
-</p>
-
+**b.** Identifique la Ip del pod, la cual debera ser asignada en la configuración de la conexión de la aplicación. Aparece en la pestaña ```details```.
 
 ---
 
@@ -143,6 +128,14 @@ const mongoURL = process.env.MONGO_URL || '<Ip_del_pod>';
 const mongoUser = process.env.MONGO_USER || '<mongo_user_name>';
 const mongoPass = process.env.MONGO_PASS || '<Password>';
 const mongoDBName = process.env.MONGO_DB_NAME || '<mongo_db_name>';
+```
+
+Si desplegó la imagen coloque:
+```
+const mongoURL = process.env.MONGO_URL || '<Ip_del_pod>';
+const mongoUser = process.env.MONGO_USER || 'admin';
+const mongoPass = process.env.MONGO_PASS || 'very-secret';
+const mongoDBName = process.env.MONGO_DB_NAME || 'admin';
 ```
 
 ---
