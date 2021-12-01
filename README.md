@@ -22,7 +22,7 @@ Laboratorio para el aprovisionamiento de un servicio persistente de Mongo DB y s
 * Despliegue de la aplicación CRUD node.js
 
 ---
-### 1. Crear un nuevo proyecto en el cluster de Openshift 🛠️
+## 1. Crear un nuevo proyecto en el cluster de Openshift 🛠️
 
 **a.**	Una vez abierta la consola web de Openshift presione "Create Project" y llene los campos con el nombre y la descripción del proyecto.
 
@@ -30,7 +30,7 @@ Laboratorio para el aprovisionamiento de un servicio persistente de Mongo DB y s
 <img width="278" alt="Annotation 2020-03-18 181640" src="https://user-images.githubusercontent.com/40369712/77016805-c57aad80-6946-11ea-83b3-c043412dcba1.png">
 </p>
 
-### 2. Aprovisione el servicio Mongo DB en un contenedor de Opeshift 🛠️
+## 2. Aprovisione el servicio Mongo DB en un contenedor de Opeshift 🛠️
 
 ### Opción 1 - Desplegar servicio
 **a.**  Seleccione el proyecto que acabe de crear, presione "Browse Catalog" y seleccione el servicio de MongoDB.
@@ -97,7 +97,7 @@ En caso de que su clúster no cuente con la opción para seleccionar MongoDB (po
  
 <br />
  
-### 3.	Configure las variables de entorno para la conexión del CRUD con el servicio de MongoDB 🛠️
+## 3.	Configure las variables de entorno para la conexión del CRUD con el servicio de MongoDB 🛠️
 
 ---
 
@@ -147,7 +147,7 @@ const mongoDBName = process.env.MONGO_DB_NAME || '<mongo_db_name>';
 
 ---
 
-### 4.	Despliegue de la aplicación CRUD node.js 🛠️
+## 4.	Despliegue de la aplicación CRUD node.js 🛠️
 
 **a.** Dirijase al catalogo y seleccione la opcion Node.js
 
