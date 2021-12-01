@@ -32,7 +32,7 @@ Laboratorio para el aprovisionamiento de un servicio persistente de Mongo DB y s
 
 ### 2. Aprovisione el servicio Mongo DB en un contenedor de Opeshift 🛠️
 
-### Opción 1
+### Opción 1 - Desplegar servicio
 **a.**  Seleccione el proyecto que acabe de crear, presione "Browse Catalog" y seleccione el servicio de MongoDB.
 
 <p align="center">
@@ -55,7 +55,7 @@ Para fines practicos, el cluster ya cuenta con un servicio de MongoDB al que pod
 ---
 Una vez igresadas las credenciales, presiones "Next" y luego "Create", espere unos minutos mientas se aprovisiona su servicio de base de datos MongoDB
 
-### Opción 2
+### Opción 2 - Desplegar imagen
 En caso de que su clúster no cuente con la opción para seleccionar MongoDB (por tema de versiones y actualizaciones, por ejemplo en clúster de versión 4.8) deberá completar los siguientes pasos para desplegar una imagen de la base de datos, y así utilizarla en el ejercicio. Realice lo siguiente:
  
 **a.** Dentro de su cuenta de *IBM Cloud* acceda al ```IBM Cloud Shell``` dando click en la pestaña <a href="https://cloud.ibm.com/shell"> <img width="25" src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/Shell_IBM.png"></a>, que se ubica en la parte superior derecha del portal. 
@@ -82,8 +82,17 @@ En caso de que su clúster no cuente con la opción para seleccionar MongoDB (po
  oc new-app -e MONGODB_USER=admin -e MONGODB_PASSWORD=secret -e MONGODB_DATABASE=mongo_db -e MONGODB_ADMIN_PASSWORD=very-secret registry.access.redhat.com/rhscl/mongodb-36-rhel7
  ```
  
+ **f.** Obtenga el estado del pod desplegado para verificar que está corriendo sin problemas.
  
-
+ **g.** Ingrese a la base de datos desde el IBM Cloud Shell para verificar que está funcionando. Para ello coloque:
+ 
+  ```
+  oc rsh nombre_pod
+  ```
+  
+  ```
+  mongo -u admin -p very-secret admin
+  ```
 
  
 <br />
