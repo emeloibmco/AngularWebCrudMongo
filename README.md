@@ -58,7 +58,33 @@ Una vez igresadas las credenciales, presiones "Next" y luego "Create", espere un
 ### Opción 2
 En caso de que su clúster no cuente con la opción para seleccionar MongoDB (por tema de versiones y actualizaciones, por ejemplo en clúster de versión 4.8) deberá completar los siguientes pasos para desplegar una imagen de la base de datos, y así utilizarla en el ejercicio. Realice lo siguiente:
  
-**a.** 
+**a.** Dentro de su cuenta de *IBM Cloud* acceda al ```IBM Cloud Shell``` dando click en la pestaña <a href="https://cloud.ibm.com/shell"> <img width="25" src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/Shell_IBM.png"></a>, que se ubica en la parte superior derecha del portal. 
+
+<p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/IBMCloudShell.png"></p>
+
+**b.** Ingrese a la consola web de OpenShift presionando el botón ```OpenShift web console```. 
+
+<p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/AccederConsolaOC.PNG"></p>
+
+**c.** De click sobre su correo (parte superior derecha) y luego en la opción ```Copy Login Command```. Una vez cargue la nueva ventana, de click en la opción ```Display Token```. Copie el comando que sale en la opción ```Log in with this token``` y colóquelo en el IBM Cloud Shell para iniciar sesión y acceder a su clúster de OpenShift.
+
+<p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/TokenFinal.gif"></p>
+
+**d.** Acceda al proyecto creado en IBM Cloud Shell. Para ello utilice el comando:
+
+   ```powershell
+   oc project <nombre_proyecto>
+   ```
+   
+**e.** Despliegue una imagen de MongoDB con el comando:
+
+ ```
+ oc new-app -e MONGODB_USER=admin -e MONGODB_PASSWORD=secret -e MONGODB_DATABASE=mongo_db -e MONGODB_ADMIN_PASSWORD=very-secret registry.access.redhat.com/rhscl/mongodb-36-rhel7
+ ```
+ 
+ 
+
+
  
 <br />
  
