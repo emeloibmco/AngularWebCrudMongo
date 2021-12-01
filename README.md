@@ -11,7 +11,7 @@ Laboratorio para el aprovisionamiento de un servicio persistente de Mongo DB y s
 
 
 *	Tener una cuenta de IBM Cloud.
-*	Contar con un cluster de Openshift 3.11.
+*	Contar con un cluster de Openshift.
 
 ## Indice :scroll:
 ---
@@ -32,6 +32,7 @@ Laboratorio para el aprovisionamiento de un servicio persistente de Mongo DB y s
 
 ### 2. Aprovisione el servicio Mongo DB en un contenedor de Opeshift 🛠️
 
+### Opción 1
 **a.**  Seleccione el proyecto que acabe de crear, presione "Browse Catalog" y seleccione el servicio de MongoDB.
 
 <p align="center">
@@ -54,6 +55,13 @@ Para fines practicos, el cluster ya cuenta con un servicio de MongoDB al que pod
 ---
 Una vez igresadas las credenciales, presiones "Next" y luego "Create", espere unos minutos mientas se aprovisiona su servicio de base de datos MongoDB
 
+### Opción 2
+En caso de que su clúster no cuente con la opción para seleccionar MongoDB (por tema de versiones y actualizaciones, por ejemplo en clúster de versión 4.8) deberá completar los siguientes pasos para desplegar una imagen de la base de datos, y así utilizarla en el ejercicio. Realice lo siguiente:
+ 
+**a.** 
+ 
+<br />
+ 
 ### 3.	Configure las variables de entorno para la conexión del CRUD con el servicio de MongoDB 🛠️
 
 ---
