@@ -82,7 +82,11 @@ En caso de que su clúster no cuente con la opción para seleccionar MongoDB (po
  oc new-app -e MONGODB_USER=admin -e MONGODB_PASSWORD=secret -e MONGODB_DATABASE=mongo_db -e MONGODB_ADMIN_PASSWORD=very-secret registry.access.redhat.com/rhscl/mongodb-36-rhel7
  ```
  
- **f.** Obtenga el estado del pod desplegado para verificar que está corriendo sin problemas.
+ **f.** Visualice los pods y obtenga el estado para verificar que está corriendo sin problemas. Utilice el comando:
+ 
+  ```
+  oc get pods
+  ```
  
  **g.** Ingrese a la base de datos desde el IBM Cloud Shell para verificar que está funcionando. Para ello coloque:
  
