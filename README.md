@@ -82,12 +82,20 @@ En caso de que su clúster no cuente con la opción para seleccionar MongoDB (po
  oc new-app -e MONGODB_USER=admin -e MONGODB_PASSWORD=secret -e MONGODB_DATABASE=mongo_db -e MONGODB_ADMIN_PASSWORD=very-secret registry.access.redhat.com/rhscl/mongodb-36-rhel7
  ```
  
+ <p align="center">
+ <img src="https://github.com/emeloibmco/OpenShift-AngularWebCRUDMongo/blob/master/Images/DesplegarMongo.PNG">
+ </p>
+ 
  **f.** Visualice los pods y obtenga el estado para verificar que está corriendo sin problemas. Utilice el comando:
  
   ```
   oc get pods
   ```
- 
+  
+  <p align="center">
+  <img src="https://github.com/emeloibmco/OpenShift-AngularWebCRUDMongo/blob/master/Images/oc_get_mongo.PNG">
+  </p>
+  
  **g.** Ingrese a la base de datos desde el IBM Cloud Shell para verificar que está funcionando. Para ello coloque:
  
   ```
@@ -98,6 +106,9 @@ En caso de que su clúster no cuente con la opción para seleccionar MongoDB (po
   mongo -u admin -p very-secret admin
   ```
 
+  <p align="center">
+  <img src="https://github.com/emeloibmco/OpenShift-AngularWebCRUDMongo/blob/master/Images/Acceso_mongo.PNG">
+  </p>
  
 <br />
  
