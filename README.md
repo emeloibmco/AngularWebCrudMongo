@@ -165,7 +165,7 @@ Luego suba la aplicación a una nuevo repositorio y guarde la URL.
 <img width="668" alt="img7" src="https://github.com/emeloibmco/OpenShift-AngularWebCRUDMongo/blob/master/Images/GitBackEnd.PNG">
 </p>
 
-**b.** Proporcione la URL del git donde se encuentra el proyecto a desplegar y presione "Create", seleccione la imagen **Node.js**. Indique aplicación y nombre, luego deje los demás campos como se muestran por defecto y de click en el botón ```Create```.
+**b.** Proporcione la URL del git donde se encuentra el proyecto a desplegar, seleccione la imagen **Node.js**. Indique aplicación y nombre, luego deje los demás campos como se muestran por defecto y de click en el botón ```Create```.
 
 ---
 
