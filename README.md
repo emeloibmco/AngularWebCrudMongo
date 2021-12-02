@@ -153,8 +153,8 @@ const mongoPass = process.env.MONGO_PASS || 'very-secret';
 const mongoDBName = process.env.MONGO_DB_NAME || 'admin';
 ```
 
-Luego suba la aplicación a una nuevo repositorio y guarde la URL.
 ---
+Luego suba la aplicación a una nuevo repositorio y guarde la URL.
 
 ## 4.	Despliegue de la aplicación CRUD node.js 🛠️
 
