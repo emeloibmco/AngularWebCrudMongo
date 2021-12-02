@@ -173,7 +173,7 @@ Luego suba la aplicación a una nuevo repositorio y guarde la URL.
 
 ---
 
-**b.** Una vez terminado el proceso de despliegue, de click en Open URL para poder ver la el enlace mediante la cual podra acceder al CRUD de MongoDB. Agregue al final de la ruta el path ```/api/customers```.
+**c.** Una vez terminado el proceso de despliegue, de click en Open URL para poder ver la el enlace mediante la cual podra acceder al CRUD de MongoDB. Agregue al final de la ruta el path ```/api/customers```.
 
 <p align="center">
 <img width="783" alt="img9" src="https://github.com/emeloibmco/OpenShift-AngularWebCRUDMongo/blob/master/Images/OpenURL.PNG">
