@@ -153,8 +153,9 @@ const mongoPass = process.env.MONGO_PASS || 'very-secret';
 const mongoDBName = process.env.MONGO_DB_NAME || 'admin';
 ```
 
----
+
 Luego suba la aplicación a una nuevo repositorio y guarde la URL.
+<br />
 
 ## 4.	Despliegue de la aplicación CRUD node.js 🛠️
 
@@ -178,8 +179,37 @@ Luego suba la aplicación a una nuevo repositorio y guarde la URL.
 <img width="783" alt="img9" src="https://github.com/emeloibmco/OpenShift-AngularWebCRUDMongo/blob/master/Images/OpenURL.PNG">
 </p>
 
+> NOTA: En caso de que la ruta no entregue ninguna respuesta, realice lo que se indica en el paso 5. Aún asi, para la conexión con el backend utilice la ruta indicada en Open URL.
 
----
+<br />
+
+## 5. Prueba del backend con port-froward
+**a.** Obtenga el nombre del pod de la aplicación con el comando
+ 
+ ```
+ oc get pods
+ ```
+ **b.** Luego coloque el comando:
+ 
+ ```
+ oc port-forward nombre_pod 8080:8080
+ ``` 
+ 
+ <p align="center">
+ <img width="783" alt="img9" src="https://github.com/emeloibmco/OpenShift-AngularWebCRUDMongo/blob/master/Images/Port-forward.PNG">
+ </p>
+ 
+ **c.** En una ventana del anevgador coloque 
+   
+ ```
+ localhost:8080/api/customers
+ ```
+ 
+ **d.** Debe encontrar como respuesta [ ] si no hay ningún dato.
+ 
+ <p align="center">
+ <img width="783" alt="img9" src="https://github.com/emeloibmco/OpenShift-AngularWebCRUDMongo/blob/master/Images/prueba_backend.PNG">
+ </p>
 
 ## Autores ✒️
 
