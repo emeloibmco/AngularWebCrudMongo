@@ -116,7 +116,7 @@ En caso de que su clúster no cuente con la opción para seleccionar MongoDB (po
 
 ---
 
-Antes de modificar el archivo de conexión de la aplicación, es necesario conocer la IP del pod donde se ha desplegado el servicio de la base de datos para eso podemos seguir los siguientes pasos:
+Antes de modificar el archivo de conexión de la aplicación, es necesario conocer la IP del pod donde se ha desplegado el servicio de la base de datos para eso podemos seguir los pasos que se indican a continuación:
 
 ---
 
