@@ -153,17 +153,18 @@ const mongoPass = process.env.MONGO_PASS || 'very-secret';
 const mongoDBName = process.env.MONGO_DB_NAME || 'admin';
 ```
 
+Luego suba la aplicación a una nuevo repositorio y guarde la URL.
 ---
 
 ## 4.	Despliegue de la aplicación CRUD node.js 🛠️
 
-**a.** Dirijase al catalogo y seleccione la opcion Node.js
-
-**b.** Una vez seleccionada, presione "Next" y proporciones el nombre de la aplicación, la URL del git donde se encuentra el proyecto a desplegar y presione "Create".
+**a.** En el mismo proyecto donde desplegó la base de datos, seleccione la pestaña ```+ Add``` ➡ ```From Git```.
 
 <p align="center">
-<img width="668" alt="img7" src="https://user-images.githubusercontent.com/40369712/77024355-527c3180-695c-11ea-8f74-d58c9d5c8999.png">
+<img width="668" alt="img7" src="https://github.com/emeloibmco/OpenShift-AngularWebCRUDMongo/blob/master/Images/GitBackEnd.PNGg">
 </p>
+
+**b.** Proporcione la URL del git donde se encuentra el proyecto a desplegar y presione "Create", seleccione la imagen **Node.js**. Indique aplicación y nombre, luego deje los demás campos como se muestran por defecto y de click en el botón ```Create```.
 
 ---
 
@@ -171,10 +172,10 @@ const mongoDBName = process.env.MONGO_DB_NAME || 'admin';
 
 ---
 
-**b.** Una vez terminado el proceso de despliegue puede dirigirse a Overview, donde podra ver la URL mediante la cual podra acceder al CRUD de MongoDB
+**b.** Una vez terminado el proceso de despliegue, de click en Open URL para poder ver la el enlace mediante la cual podra acceder al CRUD de MongoDB. Agregue al final de la ruta el path ```/api/customers```.
 
 <p align="center">
-<img width="783" alt="img9" src="https://user-images.githubusercontent.com/40369712/77024952-d682e900-695d-11ea-8724-ffa8b08c8b58.png">
+<img width="783" alt="img9" src="https://github.com/emeloibmco/OpenShift-AngularWebCRUDMongo/blob/master/Images/OpenURL.PNG">
 </p>
 
 
