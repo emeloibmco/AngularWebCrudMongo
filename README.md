@@ -130,7 +130,7 @@ Antes de modificar el archivo de conexión de la aplicación, es necesario conoc
 
 Para esto puede seguir los siguientes pasos:
 
-**I.** Clone este repositorio desde la pagina web como un **.ZIP** o desde la linea de comandos ejecutando:
+**I.** En su equipo clone este repositorio con el comando:
 
 ```
 git clone https://github.com/CristianR11/CrudMongo
